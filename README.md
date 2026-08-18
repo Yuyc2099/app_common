@@ -20,6 +20,7 @@
 - `SEGGER_RTT/`：SEGGER RTT
 - `vofa/`：VOFA+ 数据发送
 - `rtthread/`：可选兼容代码，裸机核心不依赖该目录
+- `examples/`：宿主工程配置和模块使用示例
 
 ## 基本使用
 
@@ -46,6 +47,7 @@ int main(void)
 }
 ```
 
-具体功能开关、注册宏和平台适配接口请查看对应头文件。
+宿主配置可参考 [`examples/config/`](examples/config/README.md)，模块使用可参考
+[`examples/app_common_example.c`](examples/app_common_example.c)。
 
 第三方组件的许可证以各目录源文件中的声明为准。
